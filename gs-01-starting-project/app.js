@@ -1,4 +1,4 @@
-//          In Vue we define the desired end result and the data we will need in our Vue app.
+//In Vue we define the desired end result and the data we will need in our Vue app.
 //          Declarative Approach
 Vue.createApp({
   data() {
