@@ -20,9 +20,19 @@
       <h2>My Course Goal</h2>
       <!-- Interpolation syntax -->
       <p>{{ courseGoal }}</p> 
+
+      <!-- We can also call the method inside {{}} -->
+      <p>{{ outputGoal() }}</p> 
+      <p  v-html="courseGoalB"></p>
+
+      <!-- In your Vue controlled HTML code, you can execute simple JavaScript code using {{}} or v-bind: -->
+      <p>{{10 + 10}}</p>
+      <p>{{Math.random()}}</p>
+      <p>{{true ? 10 : 20}}</p>
+
       <!-- {{}} This syntax is only available between opening and closing HTML tags -->
       <p>Learn more <a href="{{vueLink}}">about Vue</a></p>
-      <!-- v-bind is Alternative to interpolation syntax to set value to an atribute-->
+      <!-- v-bind is an alternative to interpolation syntax to (bind)set value to an atribute-->
       <p>Learn more <a v-bind:href="vueLink">about Vue</a></p>
     </section>
   </body>
